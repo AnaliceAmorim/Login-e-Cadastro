@@ -1,0 +1,107 @@
+/*CSS GERAL*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #140180, #000000be);
+}
+
+.formulario {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.caixa-formulario {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.caixa-formulario input {
+  padding: 10px 45px 10px 10px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.caixa-formulario input::placeholder {
+  color: #fff;
+}
+
+.caixa-formulario i {
+  position: absolute;
+  font-size: 20px;
+  right: 20px;
+  top: 30%;
+}
+
+.lembrar-esqueci {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lembrar-esqueci label {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  gap: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #140180;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1401809a;
+}
+
+.registro {
+  font-size: 14px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

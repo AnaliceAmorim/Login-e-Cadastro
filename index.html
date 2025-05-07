@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!--FORMULARIO DE LOGIN-->
+    <div class="formulario" id="formulario-login">
+      <h1>Login</h1>
+      <form>
+        <div class="caixa-formulario">
+          <input
+            type="text"
+            placeholder="Nome de usuário"
+            required
+            maxlength="20"
+          />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="caixa-formulario">
+          <input
+            type="password"
+            placeholder="Senha"
+            required
+            maxlength="12"
+            id="senha"
+          />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="lembrar-esqueci">
+          <label><input type="checkbox" />Lembrar-me</label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+        <button type="submit">Entrar</button>
+        <div class="registro">
+          <p>Não tem conta? <a href="#" id="mostre-cadastro">Registrar</a></p>
+        </div>
+      </form>
+    </div>
+    <!--FORMULARIO DE CADASTRO-->
+    <div class="formulario hidden" id="formulario-cadastro">
+      <h1>Cadastrar</h1>
+      <form>
+        <div class="caixa-formulario">
+          <input
+            type="text"
+            placeholder="Nome de usuário"
+            required
+            maxlength="20"
+          />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="caixa-formulario">
+          <input type="email" placeholder="E-mail" required />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="caixa-formulario">
+          <input
+            type="password"
+            placeholder="Senha"
+            required
+            maxlength="12"
+            id="senha"
+          />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <button type="submit">Cadastrar</button>
+        <div class="registro">
+          <p>Já tem conta? <a href="#" id="mostre-login">Faça login</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
